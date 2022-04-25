@@ -41,5 +41,6 @@ function reset(){
     document.querySelector(".coin").style.animation = "none";
     heads = 0;
     tails = 0;
+    ribs = 0;
     updateStats();
 };
