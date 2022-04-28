@@ -5,25 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="img/front.png" type="image/png">
+    <link rel="shortcut icon" href="img/coin-icon.png" type="image/png">
     <title>Flip Coin</title>
 </head>
 <body>
-    
     <div class="wrap">
-        <div class="card">
+        
+    <!-- It is the main card -->
+
+        <div class="card" id="card1">
             <div class="top">
-                <p id="orel" >Heads - 0</p>
-                <p id="reshka">Tails - 0</p>
-                <p id="rebro">Ribs - 0</p>
+                <div class="left">
+                    <button onclick="achievements()"  class="achievements"><img src="img/award.svg" alt=""></button>
+                    <button onclick="shop()" class="shop"><img src="img/shop.svg" alt=""></button>
+                </div>
+                <div class="mid">
+                    <p id="orel" >Heads - 0</p>
+                    <p id="reshka">Tails - 0</p>
+                    <p id="rebro">Ribs - 0</p>
+                </div>
+                <div class="right">
+                    <div id="money"> 
+                        <img src="img/money.svg" alt="" id="cash"> 
+                        <p id="money-count">- 0</p>
+                    </div>
+                </div>
             </div>
             <div class="middle">
                 <div class="coin">
                     <div class="heads">
-                        <img src="img/front.png" alt="" class="h">
+                        <img id="mainHeads" src="img/skins/front6.png" alt="" class="h">
                     </div>
                     <div class="tails">
-                        <img src="img/back.png" alt="" class="t">
+                        <img id="mainTails" src="img/skins/back6.png" alt="" class="t">
                     </div>
                 </div>
             </div>
@@ -32,13 +46,197 @@
                 <button id="reset" onclick="reset()">Reset</button>     
             </div>
         </div>
+        <!-- End of the main card -->
+
+
+
+
+        <!-- It is the shop card -->
+
+        <div class="card" id="card2">
+            <div class="tops">
+                <button onclick="ret()" class="return"><img src="img/box-arrow-left.svg" alt=""></button>
+                <h1 style="color: rgb(85, 84, 84);">Shop</h1>
+            </div>
+            <div class="rows">
+                <div class="objs">
+                    <button onclick="chooseC1()" class="coinz c1">
+                        <div class="headsz1 hh1">
+                            <img src="img/skins/front6.png" alt="">
+                        </div>
+                        <div class="tailsz tt1">
+                            <img src="img/skins/back6.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost1" style="color: yellowgreen;">Got</div>
+                </div>
+                <div class="objs">
+                    <button class="coinz c2" onclick="boughtC2()">
+                        <div class="headsz hh2">
+                            <img src="img/skins/front.png" alt="">
+                        </div>
+                        <div class="tailsz tt2">
+                            <img src="img/skins/back.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost2">10 coins</div>
+                </div>
+                <div class="objs">
+                    <button class="coinz c3" onclick="boughtC3()">
+                        <div class="headsz hh3">
+                            <img src="img/skins/front3.png" alt="">
+                        </div>
+                        <div class="tailsz tt3">
+                            <img src="img/skins/back3.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost3">100 coins</div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="objs">
+                    <button class="coinz c4" onclick="boughtC4()">
+                        <div class="headsz hh4">
+                            <img src="img/skins/front2.png" alt="">
+                        </div>
+                        <div class="tailsz tt4">
+                            <img src="img/skins/back2.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost4">For achievement</div>
+                </div>
+                <div class="objs">
+                    <button class="coinz c5" onclick="boughtC5()">
+                        <div class="headsz hh5">
+                            <img src="img/skins/front1.png" alt="">
+                        </div>
+                        <div class="tailsz tt5">
+                            <img src="img/skins/back1.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost5">For achievement</div>
+                </div>
+                <div class="objs">
+                    <button class="coinz c6" onclick="boughtC6()">
+                        <div class="headsz hh6">
+                            <img src="img/skins/front4.png" alt="">
+                        </div>
+                        <div class="tailsz tt6">
+                            <img src="img/skins/back4.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost6">For achievement</div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="objs">
+                    <button class="coinz c7" onclick="boughtC7()">
+                        <div class="headsz hh7">
+                            <img src="img/skins/front5.png" alt="">
+                        </div>
+                        <div class="tailsz tt7">
+                            <img src="img/skins/back5.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost7">150 coins</div>
+                </div>
+                <div class="objs">
+                    <button class="coinz c8" onclick="boughtC8()">
+                        <div class="headsz hh8">
+                            <img src="img/skins/front7.png" alt="">
+                        </div>
+                        <div class="tailsz tt8">
+                            <img src="img/skins/back7.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost8">150 coins</div>
+                </div>
+                <div class="objs">
+                    <button class="coinz c9" onclick="boughtC9()">
+                        <div class="headsz hh9">
+                            <img src="img/skins/front8.png" alt="">
+                        </div>
+                        <div class="tailsz tt9">
+                            <img src="img/skins/back8.png" alt="">
+                        </div>
+                    </button>
+                    <div class="cost cost9">150 coins</div>
+                </div>
+            </div>
+        </div>
+        <!-- End of the shop card -->
+
+            
+        <!-- It is the achievements card -->
+
+        <div class="card" id="card3">
+            <div class="topa">
+                <button onclick="ret()" class="return"><img src="img/box-arrow-left.svg" alt=""></button>
+                <h1 style="color: rgb(85, 84, 84);">Achievements</h1>
+            </div>
+            <div class="rowa">
+                <div class="obja obja1">
+                    <div class="lefta">
+                        <div class="window">
+                            <img src="img/achievementsImg/1timeCoin.png" alt="">
+                        </div>
+                    </div>
+                    <div class="righta">
+                        The coin stood on the HEAD. Congratulations!
+                    </div>
+                </div>
+            </div>
+            <div class="rowa">
+                <div class="obja obja2">
+                    <div class="lefta">
+                        <div class="window">
+                            <img src="img/achievementsImg/1timeCoin.png" alt="">
+                        </div>
+                    </div>
+                    <div class="righta">
+                        The coin stood on the TAIL. Congratulations!
+                    </div>
+                </div>  
+            </div>
+            <div class="rowa">
+                <div class="obja obja3">
+                    <div class="lefta">
+                        <div class="window">
+                            <img src="img/achievementsImg/forRib.png" alt="">
+                        </div>
+                    </div>
+                    <div class="righta">
+                        The coin stood on the RIB. You are so lucky. Congratulations!
+                    </div>
+                </div>
+            </div>
+            <div class="rowa">
+                <div class="obja obja4">
+                    <div class="lefta">
+                        <div class="window">
+                            <img src="img/achievementsImg/100timesCoin.png" alt="">
+                        </div>
+                    </div>
+                    <div class="righta">
+                        The coin stood on the HEAD 100 TIMES. Congratulations!
+                    </div>
+                </div>
+            </div>
+            <div class="rowa">
+                <div class="obja obja5">
+                    <div class="lefta">
+                        <div class="window">
+                            <img src="img/achievementsImg/100timesCoin.png" alt="">
+                        </div>
+                    </div>
+                    <div class="righta">
+                        The coin stood on the TAIL 100 TIMES. Congratulations!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of the achievements card -->
     </div>
-
-
-
-
-
-    
     <script src="script/script.js"></script>
 </body>
 </html>
