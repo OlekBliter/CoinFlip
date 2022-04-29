@@ -197,8 +197,8 @@ function boughtC3() {
     if(c3b==true){
         let buy = confirm('Do you really want to buy it?')
         if(buy==true){
-            if(money>=100){
-                money=money-100
+            if(money>=50){
+                money=money-50
                 document.querySelector('.hh3').style.filter = "grayscale(0%)"
                 document.querySelector('.tt3').style.filter = "grayscale(0%)"
                 document.querySelector('.cost3').textContent = "Got"
@@ -254,8 +254,8 @@ function boughtC7() {
     if(c7b==true){
         let buy = confirm('Do you really want to buy it?')
         if(buy==true){
-            if(money>=150){
-                money=money-150
+            if(money>=100){
+                money=money-100
                 document.querySelector('.hh7').style.filter = "grayscale(0%)"
                 document.querySelector('.tt7').style.filter = "grayscale(0%)"
                 document.querySelector('.cost7').textContent = "Got"
@@ -281,8 +281,8 @@ function boughtC8() {
     if(c8b==true){
         let buy = confirm('Do you really want to buy it?')
         if(buy==true){
-            if(money>=150){
-                money=money-150
+            if(money>=100){
+                money=money-100
                 document.querySelector('.hh8').style.filter = "grayscale(0%)"
                 document.querySelector('.tt8').style.filter = "grayscale(0%)"
                 document.querySelector('.cost8').textContent = "Got"
@@ -308,8 +308,8 @@ function boughtC9() {
     if(c9b==true){
         let buy = confirm('Do you really want to buy it?')
         if(buy==true){
-            if(money>=150){
-                money=money-150
+            if(money>=100){
+                money=money-100
                 document.querySelector('.hh9').style.filter = "grayscale(0%)"
                 document.querySelector('.tt9').style.filter = "grayscale(0%)"
                 document.querySelector('.cost9').textContent = "Got"
