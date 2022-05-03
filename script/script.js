@@ -20,7 +20,7 @@ function disBtn(){
     },3500);
 }
 function flip(){
-let random = Math.floor(Math.random() * 1000000)
+let random = Math.floor(Math.random() * 10000)
 document.querySelector(".coin").style.animation = "none";
     if(random%2==0){
         setTimeout(function(){
