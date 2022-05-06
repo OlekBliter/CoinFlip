@@ -301,6 +301,9 @@
         .tailsz{
             transform: rotateX(180deg ) scaleY(-1) scaleX(-1) translateZ(8px);
     }
+        .headsz{           
+            left: -2px;
+        }
     .c1:hover,.c2:hover,.c3:hover,.c4:hover,.c5:hover,.c6:hover,.c7:hover,.c8:hover,.c9:hover{
         animation: 6s spin infinite;
     }
