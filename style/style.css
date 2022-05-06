@@ -264,17 +264,17 @@
             content: '';
             height: 100px;
             width: 100px;
-            transform: translateZ(-5px);
+            transform: translateZ(-0.5px);
         }
         
         .coinz:after{
             background-color: #a8804f;
             content: '';
-            left: 2.5em;
+            left: 2.6em;
             position: absolute;
             border-radius: 20%;
             height: 100px;
-            width: 7.8px;
+            width: 4.8px;
             z-index: -10;
             transform: rotateY(-90deg);
             transform-origin: 100% 50%;
@@ -299,7 +299,7 @@
         top: -2px;
     }
         .tailsz{
-            transform: rotateX(180deg ) scaleY(-1) scaleX(-1) translateZ(8px);
+            transform: rotateX(180deg) scaleY(-1) scaleX(-1) translateZ(5px);
     }
         .headsz{           
             left: -2px;
