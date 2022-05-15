@@ -8,9 +8,9 @@ function changeMode(){
         mode++
         document.querySelector('.changeMode').style.animation = 'changeModeAnimationDark 1s forwards'
         document.querySelector('.wrap').style.backgroundImage = 'linear-gradient(90deg, rgb(59, 18, 97), rgb(128, 68, 128))'
-        document.querySelector('#card1').style.background = 'rgb(85, 84, 84)'
-        document.querySelector('#card2').style.background = 'rgb(85, 84, 84)'
-        document.querySelector('#card3').style.background = 'rgb(85, 84, 84)'
+        document.querySelector('#card1').style.background = 'rgb(141, 141, 141)'
+        document.querySelector('#card2').style.background = 'rgb(141, 141, 141))'
+        document.querySelector('#card3').style.background = 'rgb(141, 141, 141)'
         document.querySelector('*').style.color = 'white'
         document.querySelector('.shopTxt').style.color = 'white'
         document.querySelector('.achTxt').style.color = 'white'
@@ -18,7 +18,7 @@ function changeMode(){
         document.querySelector('.shop').style.background = 'rgb(128, 68, 128)'
         document.querySelector('#flip').style.background = 'blueviolet'
         document.querySelector('#flip').style.border = '1.5px solid blueviolet'
-        document.querySelector('#reset').style.background = 'rgb(85, 84, 84)'
+        document.querySelector('#reset').style.background = 'rgb(141, 141, 141)'
         document.querySelector('#reset').style.border = '1.5px solid blueviolet'
         document.querySelector('#reset').style.color = 'blueviolet'
     }else{
