@@ -9,7 +9,7 @@ function changeMode(){
         document.querySelector('.changeMode').style.animation = 'changeModeAnimationDark 1s forwards'
         document.querySelector('.wrap').style.backgroundImage = 'linear-gradient(90deg, rgb(59, 18, 97), rgb(128, 68, 128))'
         document.querySelector('#card1').style.background = 'rgb(141, 141, 141)'
-        document.querySelector('#card2').style.background = 'rgb(141, 141, 141))'
+        document.querySelector('#card2').style.background = 'rgb(141, 141, 141)'
         document.querySelector('#card3').style.background = 'rgb(141, 141, 141)'
         document.querySelector('*').style.color = 'white'
         document.querySelector('.shopTxt').style.color = 'white'
